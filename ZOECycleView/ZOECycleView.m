@@ -139,6 +139,7 @@ static NSString *const CellId = @"CycleCell";
         [self.link invalidate];
     }
 }
+
 //-(void)dealloc
 //{
 //    NSLog(@"%s",__FUNCTION__);

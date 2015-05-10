@@ -26,19 +26,30 @@
             NSString *path = [[NSBundle mainBundle]pathForResource:name ofType:@"jpg" inDirectory:@"images"];
             UIImage *image = [UIImage imageWithContentsOfFile:path];
             [arrayM addObject:image];
-            [arrayT addObject:name];
+            NSString *texts = @"有问题可以咨询/z.o.e@outlook.com";
+            [arrayT addObject:texts];
         }
-    ZOECycleView *view = [ZOECycleView ZOECycleViewWithFrame:CGRectMake(0, 0, 320, 200) andImages:arrayM cycleTimes:3 selectAtCell:^(NSInteger selectNumber) {
+    
+    
+//    ZOECycleView *view = [ZOECycleView ZOECycleViewWithFrame:CGRectMake(0, 0, 320, 200) andImages:arrayM cycleTimes:3 selectAtCell:^(NSInteger selectNumber) {
+//        NSLog(@"%tu",selectNumber);
+//    }];
+//    [view setTitleGroup:arrayT];
+//    [self.view addSubview:view];
+    
+    ZOECycleView *view = [[ZOECycleView alloc]initWithFrame:CGRectMake(0, 0, 320, 200)];
+    [view setImageGroup:arrayM];
+    [view setTimer:2];
+    [view setTitleGroup:arrayT];
+    [view didSelectCell:^(NSInteger selectNumber) {
         NSLog(@"%tu",selectNumber);
     }];
-    [view setTitleGroup:arrayT];
+    [view setTitleColor:[UIColor redColor]];
+    [view setTitleTextColor:[UIColor yellowColor]];
     [self.view addSubview:view];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 -(void)dealloc
 {

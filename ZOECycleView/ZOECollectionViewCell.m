@@ -39,6 +39,7 @@
     }
     [self.label setTextColor:titleTextColor];
 }
+#pragma mark - 修改标题和字体大小
 -(UILabel *)label
 {
     if (_label == nil) {
