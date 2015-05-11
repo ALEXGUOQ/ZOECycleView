@@ -17,6 +17,7 @@
     self.imageView.image = image;
     [self addSubview:self.imageView];
 }
+
 -(void)setTitle:(NSString *)title
 {
     if (title == nil) {
@@ -58,4 +59,8 @@
     }
     return _imageView;
 }
+//-(void)dealloc
+//{
+//    NSLog(@"%s",__FUNCTION__);
+//}
 @end

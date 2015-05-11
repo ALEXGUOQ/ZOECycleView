@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		725141251B008AC300B3C992 /* NSString+SandboxPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 725141241B008AC300B3C992 /* NSString+SandboxPath.m */; };
+		725141271B0092E700B3C992 /* noImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 725141261B0092E700B3C992 /* noImage.jpg */; };
 		72963FBB1B00085C00D5FA33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72963FBA1B00085C00D5FA33 /* main.m */; };
 		72963FBE1B00085C00D5FA33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72963FBD1B00085C00D5FA33 /* AppDelegate.m */; };
 		72963FC11B00085C00D5FA33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72963FC01B00085C00D5FA33 /* ViewController.m */; };
@@ -32,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		725141231B008AC300B3C992 /* NSString+SandboxPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SandboxPath.h"; sourceTree = "<group>"; };
+		725141241B008AC300B3C992 /* NSString+SandboxPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SandboxPath.m"; sourceTree = "<group>"; };
+		725141261B0092E700B3C992 /* noImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = noImage.jpg; path = "NSString+SandboxPath/noImage.jpg"; sourceTree = "<group>"; };
 		72963FB51B00085C00D5FA33 /* NewTestViewMy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewTestViewMy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72963FB91B00085C00D5FA33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72963FBA1B00085C00D5FA33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -73,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		725141221B008AC300B3C992 /* NSString+SandboxPath */ = {
+			isa = PBXGroup;
+			children = (
+				725141231B008AC300B3C992 /* NSString+SandboxPath.h */,
+				725141241B008AC300B3C992 /* NSString+SandboxPath.m */,
+			);
+			path = "NSString+SandboxPath";
+			sourceTree = "<group>";
+		};
 		72963FAC1B00085C00D5FA33 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +148,8 @@
 		72963FE81B000D9D00D5FA33 /* ZOECycleView */ = {
 			isa = PBXGroup;
 			children = (
+				725141261B0092E700B3C992 /* noImage.jpg */,
+				725141221B008AC300B3C992 /* NSString+SandboxPath */,
 				72963FE91B000D9D00D5FA33 /* ZOECollectionViewCell.h */,
 				72963FEA1B000D9D00D5FA33 /* ZOECollectionViewCell.m */,
 				72963FEB1B000D9D00D5FA33 /* ZOECycleView.h */,
@@ -239,6 +255,7 @@
 			files = (
 				72963FF01B000E1200D5FA33 /* images in Resources */,
 				72963FC41B00085C00D5FA33 /* Main.storyboard in Resources */,
+				725141271B0092E700B3C992 /* noImage.jpg in Resources */,
 				72963FC91B00085C00D5FA33 /* LaunchScreen.xib in Resources */,
 				72963FE71B000C2100D5FA33 /* Test.storyboard in Resources */,
 				72963FC61B00085C00D5FA33 /* Images.xcassets in Resources */,
@@ -264,6 +281,7 @@
 				72963FED1B000D9D00D5FA33 /* ZOECollectionViewCell.m in Sources */,
 				72963FEE1B000D9D00D5FA33 /* ZOECycleView.m in Sources */,
 				72963FBB1B00085C00D5FA33 /* main.m in Sources */,
+				725141251B008AC300B3C992 /* NSString+SandboxPath.m in Sources */,
 				72963FE51B000C1600D5FA33 /* NewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
